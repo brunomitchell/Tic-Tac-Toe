@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha - FUNCIONANDO</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="header">
+        <h1>Jogo da Velha</h1>
+        <button class="sound-toggle">🔊 Som Ativado</button>
+    </div>
+    
+    <div class="scoreboard">
+        <div class="scoreitem">Você: <span class="score player-score">0</span></div>
+        <div class="scoreitem">IA: <span class="score ai-score">0</span></div>
+        <div class="scoreitem">Empates: <span class="score tie-score">0</span></div>
+    </div>
+
+    <div class="area">
+        <div data-item="a1" class="item b r"></div>
+        <div data-item="a2" class="item b r"></div>
+        <div data-item="a3" class="item b"></div>
+
+        <div data-item="b1" class="item b r"></div>
+        <div data-item="b2" class="item b r"></div>
+        <div data-item="b3" class="item b"></div>
+
+        <div data-item="c1" class="item r"></div>
+        <div data-item="c2" class="item r"></div>
+        <div data-item="c3" class="item"></div>
+    </div>
+
+    <div class="info">
+        <div class="infoitem">
+            <div class="infotitulo">A vez é:</div>
+            <div class="infocorpo vez">--</div>
+        </div>
+        <div class="infoitem">
+            <div class="infotitulo">Resultado:</div>
+            <div class="infocorpo resultado">--</div>
+        </div>
+    </div>
+
+    <button class="reset">Resetar</button>
+    <audio id="background-music" loop>
+        <source src="Eggy Toast - Brain.mp3.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
